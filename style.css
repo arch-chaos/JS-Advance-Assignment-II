@@ -123,6 +123,7 @@ button:hover {
 
 .chip:hover {
     background-color: #2D2C2A;
+    cursor: pointer;
 }
 
 #fetchData {
@@ -130,6 +131,30 @@ button:hover {
     padding: 15px;
     border-radius: 5px;
     min-height: 150px;
+}
+
+.weather-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.weather-row:last-child {
+    border-bottom: none;
+}
+
+.weather-row .label {
+    font-weight: bold;
+    color: #D1A054;
+    min-width: 100px;
+}
+
+.weather-row .value {
+    text-align: right;
+    color: #2D2C2A;
+    font-weight: 500;
 }
 
 #consoleOutput {
