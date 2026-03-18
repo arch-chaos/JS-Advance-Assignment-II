@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252C37;
+  color: #F8C61E;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.weatherform {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #252C37;
+  border: 2px solid #F8C61E;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(248, 198, 30, 0.2);
+}
+
+.weatherform form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.weatherform div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.weatherform label {
+  color: #F8C61E;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.weatherform input {
+  padding: 10px 12px;
+  background-color: #252C37;
+  border: 1px solid #F8C61E;
+  color: #F8C61E;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.weatherform input::placeholder {
+  color: rgba(248, 198, 30, 0.5);
+}
+
+.weatherform input:focus {
+  outline: none;
+  border-color: #F8C61E;
+  box-shadow: 0 0 8px rgba(248, 198, 30, 0.3);
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #F8C61E;
+  color: #252C37;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #F8C61E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(248, 198, 30, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.info {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #F8C61E;
+  color: #252C37;
+  border-radius: 8px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.historybtn {
+  max-width: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.historybtn button {
+  padding: 8px 15px;
+  font-size: 14px;
+}
